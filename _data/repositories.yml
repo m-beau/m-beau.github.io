@@ -1,12 +1,16 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - m-beau
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - repo: m-beau/NeuroPyxels
+    icon: images/NeuroPyxels_logo_final.png
+    badge: 
+      img: https://static.pepy.tech/badge/npyx
+      url: https://pepy.tech/project/npyx
+      alt: Downloads
+  - repo: m-beau/cachecache
+    icon: images/cachecache.png
+    badge:
+      img: https://static.pepy.tech/badge/cachecache
+      url: https://pepy.tech/project/cachecache
+      alt: Downloads

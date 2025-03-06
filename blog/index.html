@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blog
+title: Posts
 pagination:
   enabled: true
   collection: posts
@@ -80,7 +80,7 @@ pagination:
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
                       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-                        <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
+                        <i class="fas fa-calendar fa-sm"></i> {{ year }}</a>
                     </p>
                   </div>
                 </div>
@@ -125,8 +125,8 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %-d, %Y' }}
+        {{ post.date | date: '%-d %B %Y' }} &nbsp; &middot; &nbsp;
+        {{ read_time }} min read
         {%- if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {%- endif %}

@@ -1,5 +1,6 @@
-{% assign repo_url =  include.repository | split: '/' %}
-
+{% assign repo_data = include.repository %}
+{% assign repo_path = repo_data.repo | default: repo_data %}
+{% assign repo_url = repo_path | split: '/' %}
 {% if site.data.repositories.github_users contains repo_url.first %}
   {% assign show_owner = false %}
 {% else %}
@@ -7,8 +8,32 @@
 {% endif %}
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img class="repo-img-light w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}">
-    <img class="repo-img-dark w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}">
-  </a>
-</div>
+    <a href="https://github.com/{{ repo_path }}" style="display: block; position: relative;">
+      <!-- Repository cards -->
+      <div class="position-relative">
+        <img class="repo-img-light w-100" alt="{{ repo_path }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}">
+        <img class="repo-img-dark w-100" alt="{{ repo_path }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}">
+      </div>
+      
+      <!-- Repository icon overlay - right aligned -->
+      {% if repo_data.icon %}
+      <div style="position: absolute; top: -70px; right: 7px; bottom: 0; display: flex; align-items: center;">
+        <img src="https://raw.githubusercontent.com/{{ repo_path }}/master/{{ repo_data.icon }}" 
+             alt="Repository icon" 
+             style="max-height: 80%; max-width: 40px;" 
+             onerror="this.style.display='none'">
+      </div>
+      {% endif %}
+
+    </a>
+
+    <!-- Download badge - below the card -->
+    {% if repo_data.badge %}
+    <div style="margin-top: 5px;">
+        <a href="{{ repo_data.badge.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ repo_data.badge.img }}" alt="{{ repo_data.badge.alt | default: 'Downloads' }}" style="max-width: 100%;">
+        </a>
+    </div>
+    {% endif %}
+
+  </div>
