@@ -1,0 +1,19 @@
+.blog-citations {
+  .citation {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+
+    .title {
+      font-weight: bold;
+    }
+
+    .author {
+      margin: 0.2rem 0;
+    }
+
+    .periodical {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

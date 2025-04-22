@@ -18,6 +18,7 @@ d-byline a, d-article d-byline a {
 }
 
 d-article {
+  text-align: justify !important;
   border-top-color: var(--global-divider-color) !important;
   p, h1, h2, h3, h4, h5, h6, li, table {
     color: var(--global-text-color) !important;
@@ -61,6 +62,7 @@ d-article {
   }
 
   d-contents {
+    text-align: left !important;
     align-self: start;
     grid-column: 1 / 4;
     grid-row: auto / span 4;
@@ -152,3 +154,74 @@ d-appendix {
     }
   }
 }
+
+/* Make sure the parent elements don't interfere with sticky positioning */
+d-article {
+  overflow: visible !important;
+}
+
+/* Target the contents directly with a more specific selector */
+d-article > d-contents {
+  position: sticky !important;
+  top: 60px !important; /* Adjust to match your navbar height */
+  max-height: calc(100vh - 70px) !important; /* Viewport height minus navbar height with some padding */
+  overflow-y: auto !important;
+  align-self: start !important;
+  
+  /* Keep all your existing styles */
+  grid-column: 1 / 4;
+  grid-row: auto / span 4;
+  justify-self: end;
+  margin-top: 0;
+  padding-left: 2em;
+  padding-right: 3em;
+  border-right: 1px solid var(--global-divider-color);
+  width: calc(max(70%, 300px));
+  margin-right: 0;
+  display: grid;
+  grid-template-columns:
+    minmax(8px, 1fr) [toc] auto
+    minmax(8px, 1fr) [toc-line] 1px
+    minmax(32px, 2fr);
+}
+
+/* Ensure other styles are preserved */
+d-article > d-contents nav {
+  grid-column: toc;
+}
+
+d-article > d-contents nav a {
+  border-bottom: none !important;
+}
+
+d-article > d-contents nav a:hover {
+  border-bottom: 1px solid var(--global-text-color) !important;
+}
+
+d-article > d-contents toc-line {
+  border-right: 1px solid var(--global-divider-color);
+  grid-column: toc-line;
+}
+
+/* Keep your mobile responsiveness */
+@media (max-width: 1024px) {
+  d-article > d-contents {
+    position: relative !important;
+    top: 0 !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: -2;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    width: 100%;
+    border: 1px solid var(--global-divider-color);
+  }
+  
+  d-article > d-contents nav {
+    grid-column: none;
+  }
+}
+

@@ -22,7 +22,7 @@ social: false  # includes social icons at the bottom of the page
 
 Hi, welcome to my website!
 
-I am a researcher in systems and computational neuroscience. As such, I divide my time between experiments (high-density electrophysiology, optogenetics, rodent behaviour) and modelling (biophysical modelling, deep learning, dynamical systems).
+I am a **researcher in systems and computational neuroscience**. As such, I divide my time between experiments (high-density electrophysiology, optogenetics, rodent behaviour) and modelling (biophysical modelling, deep learning, dynamical systems).
 
 Some of my work:
 

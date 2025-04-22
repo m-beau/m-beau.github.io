@@ -189,8 +189,8 @@
           {%- endif %}
           </div>
           {% if site.enable_publication_badges %}
-          {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
-          {% assign entry_has_dimensions_badge = entry.dimensions or entry.doi or entry.pmid %}
+          {% assign entry_has_altmetric_badge = entry.altmetric | default: entry.doi | default: entry.eprint | default: entry.pmid | default: entry.isbn %}
+          {% assign entry_has_dimensions_badge = entry.dimensions | default: entry.doi | default: entry.pmid %}
           {% if entry_has_altmetric_badge or entry_has_dimensions_badge %}
           <div class="badges">
             {%- if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}

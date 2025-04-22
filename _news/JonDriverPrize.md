@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[Jon driver prize](https://www.ucl.ac.uk/research/domains/neuroscience/ucl-neuroscience-symposium-2024)!
+It is an honour to have been awarded UCL's [Jon Driver prize](https://www.ucl.ac.uk/research/domains/neuroscience/research/jondriverprize) for my PhD work. You can find my talk on UCL's website [here](https://www.ucl.ac.uk/research/domains/neuroscience/ucl-neuroscience-symposium-2024).

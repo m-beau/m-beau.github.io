@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joining the Brody lab
+I will be joining the [Brody lab](https://brodylab.org/) in Princeton to start my postdoc in June 2025!

@@ -11,6 +11,11 @@ horizontal: false
 
 [comment]: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
 
+## Recorded talks
+
+<a href="https://www.youtube.com/watch?v=zy0vBngeTJQ"><i class="fab fa-youtube" style="color:red"></i></a> March 2025, <a href="https://www.youtube.com/watch?v=zy0vBngeTJQ">John Hopkins Cerebellum Seminars</a> <br>
+<a href="https://mediacentral.ucl.ac.uk/Play/112817"><i class="fab fa-youtube" style="color:red"></i></a> June 2024, <a href="https://mediacentral.ucl.ac.uk/Play/112817">Jon Driver Prize Winner Talk</a> <br>
+<a href="https://www.youtube.com/watch?v=hjuufbEm42g"><i class="fab fa-youtube" style="color:red"></i></a> October 2022, <a href="https://www.youtube.com/watch?v=hjuufbEm42g">UCL Neuropixels Course</a>
 
 ## Repositories
 
@@ -30,7 +35,6 @@ horizontal: false
 </div>
 {% endif %}
 
-<br>
 
 ## Ongoing projects
 

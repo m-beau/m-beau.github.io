@@ -2,8 +2,9 @@
 layout: page
 permalink: /publications/
 title: Publications
+bibliography: papers.bib
 
-description: 
+description:
 nav: true
 nav_order: 1
 ---
@@ -12,7 +13,7 @@ nav_order: 1
 
 <div class="publications">
 
-{% bibliography -f {{ site.scholar.bibliography }} %}
+{% bibliography --file papers %}
 
 </div>
 

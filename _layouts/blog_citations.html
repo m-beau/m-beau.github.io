@@ -1,0 +1,57 @@
+---
+---
+
+<div
+    class="minimal-citation"
+    style="padding-left: 2em; text-indent: -2em; margin-bottom: 1em"
+>
+    <!-- Authors -->
+    <span class="authors">
+        {%- assign author_count = entry.author_array | size -%} {%- assign
+        last_author_index = author_count | minus: 1 -%} {%- if author_count <= 5
+        -%}
+        <!-- 5 or fewer authors - show all -->
+        {%- for author in entry.author_array -%} {%- if forloop.first -%} {{
+        author.first }} {{ author.last }} {%- elsif forloop.last -%} , and {{
+        author.first }} {{ author.last }} {%- else -%} , {{ author.first }} {{
+        author.last }} {%- endif -%} {%- endfor -%} {%- else -%}
+        <!-- More than 5 authors - show first 4, et al., and last -->
+        {%- for author in entry.author_array -%} {%- if forloop.index <= 4 -%}
+        {%- if forloop.first -%} {{ author.first }} {{ author.last }} {%- else
+        -%} , {{ author.first }} {{ author.last }} {%- endif -%} {%- endif -%}
+        {%- endfor -%} , et al., and {{
+        entry.author_array[last_author_index].first }} {{
+        entry.author_array[last_author_index].last }} {%- endif -%}
+    </span>
+
+    <!-- Title in quotes -->
+    <span class="title">. "{{ entry.title }}," </span>
+
+    <!-- Journal/Venue in italics -->
+    <span class="venue">
+        {%- if entry.journal -%}
+        <em>{{ entry.journal }}</em>
+        {%- elsif entry.booktitle -%}
+        <em>{{ entry.booktitle }}</em>
+        {%- endif -%}
+    </span>
+
+    <!-- Volume, issue, pages if available -->
+    {%- if entry.volume -%}
+    <span class="volume"> {{ entry.volume }}</span>
+    {%- if entry.number -%}
+    <span class="number">({{ entry.number }})</span>
+    {%- endif -%} {%- if entry.pages -%}
+    <span class="pages">: {{ entry.pages }}</span>
+    {%- endif -%} {%- endif -%}
+
+    <!-- Year -->
+    <span class="year">, {{ entry.year }}.</span>
+
+    <!-- DOI if available -->
+    {%- if entry.doi -%}
+    <span class="doi">
+        doi: <a href="https://doi.org/{{ entry.doi }}">{{ entry.doi }}</a></span
+    >
+    {%- endif -%}
+</div>

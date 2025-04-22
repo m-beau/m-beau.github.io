@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+<style>
+  .container {
+    max-width: 85% !important;
+  }
+  .col-sm-3 {
+    flex: 0 0 15% !important;
+    max-width: 15% !important;
+  }
+  .col-sm-9 {
+    flex: 0 0 85% !important;
+    max-width: 85% !important;
+  }
+</style>
+
 <!-- _layouts/cv.html -->
 {% unless site.data.resume %}
 <div class="post">
@@ -11,7 +25,7 @@ layout: default
   </header>
 
   <article>
-    <div class="cv">
+    <div class="cv" style="max-width: 1600px; margin: 0 auto;">
       {% for entry in site.data.cv %}
         <a class="anchor" id="{{ entry.title }}"></a>
         <div class="card mt-3 p-3">
