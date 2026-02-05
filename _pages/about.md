@@ -34,6 +34,6 @@ I received my **Ph.D. in Neuroscience** from University College London in 2025. 
 
 **Before that**, I studied medicine and neuroscience as part of an MD-PhD programme shared between Université Paris Descartes, Université Pierre et Marie Curie, and École Normale Supérieure. In this context, I worked in the lab of Boris Barbour at the Institut de Biologie de l'École Normale Supérieure.
 
-**In my free time**, I practice and teach Shotokan Karate (2nd Dan black belt, FFKDA), and the rest of the time cook and brew espresso for friends!
+**In my free time**, I practice and teach [Shotokan Karate](https://en.wikipedia.org/wiki/Shotokan) (2nd Dan black belt, FFKDA). If you are in the Princeton area and interested in Karate, join us either at [Northern Karate Princeton](https://northernkarateprinceton.com) or get in touch with me to join our free sessions on Tuesdays and Sundays on Princeton University's campus!
 
 **I'm thrilled about the future of neuroscience** and can't wait to see where our collective efforts take us. If you're interested in discussing research, collaborations, or just want to chat about the brain over coffee, please don't hesitate to reach out!
