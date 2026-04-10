@@ -21,6 +21,15 @@ If you like the theme, give it a star!
 
 [![Preview](https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
+To serve the site locally just run:
+
+```bash
+open -a Docker
+docker compose up -d        # start in background. add --build when you change the gemfile or dockerfile.
+docker compose logs -f jekyll   # tail logs if needed
+docker compose down         # stop
+```
+
 ## User community
 
 The vibrant community of **al-folio** users is growing!
