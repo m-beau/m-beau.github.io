@@ -487,6 +487,154 @@ footer.sticky-bottom {
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+.repo-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.repo-card-link {
+  display: block;
+  padding: 1.1rem 1.25rem 0.9rem;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+  }
+}
+
+.repo-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.repo-card-icon {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.repo-card-title {
+  min-width: 0;
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.repo-card-owner {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.repo-card-name {
+  color: var(--global-theme-color);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.repo-card-desc {
+  color: var(--global-text-color);
+  opacity: 0.85;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin: 0 0 0.75rem 0;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.repo-card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  text-align: left;
+}
+
+.repo-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+
+  i {
+    font-size: 0.9em;
+    opacity: 0.85;
+  }
+}
+
+.lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8b8b8b;
+  flex-shrink: 0;
+
+  // Common GitHub language colors
+  &.lang-python             { background: #3572A5; }
+  &.lang-jupyter-notebook   { background: #DA5B0B; }
+  &.lang-javascript         { background: #f1e05a; }
+  &.lang-typescript         { background: #3178c6; }
+  &.lang-html               { background: #e34c26; }
+  &.lang-css                { background: #563d7c; }
+  &.lang-scss               { background: #c6538c; }
+  &.lang-rust               { background: #dea584; }
+  &.lang-go                 { background: #00ADD8; }
+  &.lang-c                  { background: #555555; }
+  &.lang-cpp                { background: #f34b7d; }
+  &.lang-cppp               { background: #f34b7d; } // C++ after slugify
+  &.lang-csharp             { background: #178600; }
+  &.lang-ruby               { background: #701516; }
+  &.lang-shell              { background: #89e051; }
+  &.lang-java               { background: #b07219; }
+  &.lang-swift              { background: #ffac45; }
+  &.lang-kotlin             { background: #A97BFF; }
+  &.lang-matlab             { background: #e16737; }
+  &.lang-r                  { background: #198CE7; }
+  &.lang-julia              { background: #a270ba; }
+}
+
+.repo-card-badge {
+  padding: 0 1.25rem 0.9rem;
+  text-align: left;
+
+  img {
+    max-width: 100%;
+    vertical-align: middle;
   }
 }
 

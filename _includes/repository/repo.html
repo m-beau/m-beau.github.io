@@ -1,37 +1,63 @@
 {% assign repo_data = include.repository %}
 {% assign repo_path = repo_data.repo | default: repo_data %}
-{% assign repo_url = repo_path | split: '/' %}
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
-{% else %}
-  {% assign show_owner = true %}
-{% endif %}
+{% assign repo_parts = repo_path | split: '/' %}
+{% assign repo_owner = repo_parts | first %}
+{% assign repo_name  = repo_parts | last %}
+{% assign branch     = repo_data.branch | default: 'master' %}
+{% assign stats      = repo_data.stats %}
 
-<div class="repo p-2 text-center">
-    <a href="https://github.com/{{ repo_path }}" style="display: block; position: relative;">
-      <!-- Repository card (GitHub social preview image) -->
-      <div class="position-relative">
-        <img class="w-100" alt="{{ repo_path }}" src="https://opengraph.githubassets.com/1/{{ repo_path }}">
-
-        <!-- Repository icon overlay - covers the owner avatar in the GitHub OG image -->
+<div class="repo p-2">
+  <div class="repo-card">
+    <a href="https://github.com/{{ repo_path }}" class="repo-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="repo-card-header">
         {% if repo_data.icon %}
-        <div style="position: absolute; top: 5%; right: 2.5%; width: 25%; aspect-ratio: 1 / 1; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <img src="https://raw.githubusercontent.com/{{ repo_path }}/{{ repo_data.branch | default: 'master' }}/{{ repo_data.icon }}"
-               alt="Repository icon"
-               style="width: 85%; height: 85%; object-fit: contain;"
+        <div class="repo-card-icon">
+          <img src="https://raw.githubusercontent.com/{{ repo_path }}/{{ branch }}/{{ repo_data.icon }}"
+               alt="{{ repo_name }} logo"
                onerror="this.parentElement.style.display='none'">
         </div>
+        {% endif %}
+        <div class="repo-card-title">
+          <div class="repo-card-owner">{{ repo_owner }}/</div>
+          <div class="repo-card-name">{{ repo_name }}</div>
+        </div>
+      </div>
+
+      {% if stats.description %}
+      <p class="repo-card-desc">{{ stats.description }}</p>
+      {% endif %}
+
+      <div class="repo-card-stats">
+        {% if stats.language %}
+        {% assign lang_slug = stats.language | downcase | replace: ' ', '-' | replace: '+', 'p' | replace: '#', 'sharp' %}
+        <span class="repo-stat" title="Primary language">
+          <span class="lang-dot lang-{{ lang_slug }}"></span>{{ stats.language }}
+        </span>
+        {% endif %}
+        {% if stats.stars != nil %}
+        <span class="repo-stat" title="Stars"><i class="fas fa-star"></i>{{ stats.stars }}</span>
+        {% endif %}
+        {% if stats.forks != nil %}
+        <span class="repo-stat" title="Forks"><i class="fas fa-code-branch"></i>{{ stats.forks }}</span>
+        {% endif %}
+        {% if stats.issues != nil %}
+        <span class="repo-stat" title="Open issues"><i class="far fa-circle-dot"></i>{{ stats.issues }}</span>
+        {% endif %}
+        {% if stats.contributors != nil %}
+        <span class="repo-stat" title="Contributors"><i class="fas fa-user-group"></i>{{ stats.contributors }}</span>
+        {% endif %}
+        {% if stats.license %}
+        <span class="repo-stat" title="License"><i class="fas fa-scale-balanced"></i>{{ stats.license }}</span>
         {% endif %}
       </div>
     </a>
 
-    <!-- Download badge - below the card -->
     {% if repo_data.badge %}
-    <div style="margin-top: 5px;">
-        <a href="{{ repo_data.badge.url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ repo_data.badge.img }}" alt="{{ repo_data.badge.alt | default: 'Downloads' }}" style="max-width: 100%;">
-        </a>
+    <div class="repo-card-badge">
+      <a href="{{ repo_data.badge.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ repo_data.badge.img }}" alt="{{ repo_data.badge.alt | default: 'Downloads' }}">
+      </a>
     </div>
     {% endif %}
-
   </div>
+</div>
