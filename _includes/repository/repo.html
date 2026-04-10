@@ -28,23 +28,25 @@
       {% endif %}
 
       <div class="repo-card-stats">
-        {% if stats.language %}
-        {% assign lang_slug = stats.language | downcase | replace: ' ', '-' | replace: '+', 'p' | replace: '#', 'sharp' %}
-        <span class="repo-stat" title="Primary language">
-          <span class="lang-dot lang-{{ lang_slug }}"></span>{{ stats.language }}
-        </span>
-        {% endif %}
         {% if stats.stars != nil %}
         <span class="repo-stat" title="Stars"><i class="fas fa-star"></i>{{ stats.stars }}</span>
         {% endif %}
         {% if stats.forks != nil %}
         <span class="repo-stat" title="Forks"><i class="fas fa-code-branch"></i>{{ stats.forks }}</span>
         {% endif %}
-        {% if stats.issues != nil %}
-        <span class="repo-stat" title="Open issues"><i class="far fa-circle-dot"></i>{{ stats.issues }}</span>
-        {% endif %}
         {% if stats.contributors != nil %}
         <span class="repo-stat" title="Contributors"><i class="fas fa-user-group"></i>{{ stats.contributors }}</span>
+        {% endif %}
+      </div>
+      <div class="repo-card-stats">
+        {% if stats.language %}
+        {% assign lang_slug = stats.language | downcase | replace: ' ', '-' | replace: '+', 'p' | replace: '#', 'sharp' %}
+        <span class="repo-stat" title="Primary language">
+          <span class="lang-dot lang-{{ lang_slug }}"></span>{{ stats.language }}
+        </span>
+        {% endif %}
+        {% if stats.issues != nil %}
+        <span class="repo-stat" title="Open issues"><i class="far fa-circle-dot"></i>{{ stats.issues }}</span>
         {% endif %}
         {% if stats.license %}
         <span class="repo-stat" title="License"><i class="fas fa-scale-balanced"></i>{{ stats.license }}</span>

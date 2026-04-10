@@ -13,9 +13,10 @@ horizontal: false
 
 ## Recorded talks
 
+<a href="https://www.youtube.com/watch?v=G46UGKaqMNs"> <i class="fab fa-youtube" style="color:red"> </i></a> November 2025, <a href="https://www.youtube.com/watch?v=G46UGKaqMNs">UCL Neuropixels course 2025: Identifying cell types from Neuropixels recordings</a> <br>
 <a href="https://www.youtube.com/watch?v=zy0vBngeTJQ"><i class="fab fa-youtube" style="color:red"></i></a> March 2025, <a href="https://www.youtube.com/watch?v=zy0vBngeTJQ">John Hopkins Cerebellum Seminars</a> <br>
 <a href="https://mediacentral.ucl.ac.uk/Play/112817"><i class="fab fa-youtube" style="color:red"></i></a> June 2024, <a href="https://mediacentral.ucl.ac.uk/Play/112817">Jon Driver Prize Winner Talk</a> <br>
-<a href="https://www.youtube.com/watch?v=hjuufbEm42g"><i class="fab fa-youtube" style="color:red"></i></a> October 2022, <a href="https://www.youtube.com/watch?v=hjuufbEm42g">UCL Neuropixels Course</a>
+<a href="https://www.youtube.com/watch?v=hjuufbEm42g"><i class="fab fa-youtube" style="color:red"></i></a> October 2022, <a href="https://www.youtube.com/watch?v=hjuufbEm42g">UCL Neuropixels Course 2022: Combining Neuropixels with optogenetics</a>
 
 ## Repositories
 

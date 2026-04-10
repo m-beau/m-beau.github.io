@@ -484,10 +484,28 @@ footer.sticky-bottom {
 
 // Repositories
 
+// Override the .align-items-center utility on the .repositories container so
+// cards stretch to equal heights within each row instead of shrinking to
+// their content and centering vertically. Keeps rows visually balanced when
+// card descriptions differ in length.
+.repositories {
+  align-items: stretch !important;
+}
+
+// Tablet: 2 cards per row
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
     flex: 0 0 50%;
+    display: flex;
+  }
+}
+
+// Desktop: 3 cards per row
+@media (min-width: 992px) {
+  .repo {
+    max-width: 33.3333%;
+    flex: 0 0 33.3333%;
   }
 }
 
@@ -569,10 +587,6 @@ footer.sticky-bottom {
   line-height: 1.45;
   margin: 0 0 0.75rem 0;
   text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .repo-card-stats {
@@ -582,6 +596,10 @@ footer.sticky-bottom {
   font-size: 0.82rem;
   color: var(--global-text-color-light);
   text-align: left;
+
+  & + .repo-card-stats {
+    margin-top: 0.35rem;
+  }
 }
 
 .repo-stat {
