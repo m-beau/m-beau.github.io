@@ -14,3 +14,6 @@ github_repos:
       img: https://static.pepy.tech/badge/cachecache
       url: https://pepy.tech/project/cachecache
       alt: Downloads
+  - repo: m-beau/pixelmap
+    branch: dev
+    icon: pixelmap/gui/assets/npix_map_logo.png

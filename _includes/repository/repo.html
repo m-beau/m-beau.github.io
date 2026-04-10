@@ -13,12 +13,14 @@
       <div class="position-relative">
         <img class="w-100" alt="{{ repo_path }}" src="https://opengraph.githubassets.com/1/{{ repo_path }}">
 
-        <!-- Repository icon overlay - top-right corner of card -->
+        <!-- Repository icon overlay - covers the owner avatar in the GitHub OG image -->
         {% if repo_data.icon %}
-        <img src="https://raw.githubusercontent.com/{{ repo_path }}/master/{{ repo_data.icon }}"
-             alt="Repository icon"
-             style="position: absolute; top: 8px; right: 8px; max-height: 48px; max-width: 48px;"
-             onerror="this.style.display='none'">
+        <div style="position: absolute; top: 5%; right: 2.5%; width: 25%; aspect-ratio: 1 / 1; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <img src="https://raw.githubusercontent.com/{{ repo_path }}/{{ repo_data.branch | default: 'master' }}/{{ repo_data.icon }}"
+               alt="Repository icon"
+               style="width: 85%; height: 85%; object-fit: contain;"
+               onerror="this.parentElement.style.display='none'">
+        </div>
         {% endif %}
       </div>
     </a>
