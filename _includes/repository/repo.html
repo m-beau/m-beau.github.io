@@ -9,22 +9,18 @@
 
 <div class="repo p-2 text-center">
     <a href="https://github.com/{{ repo_path }}" style="display: block; position: relative;">
-      <!-- Repository cards -->
+      <!-- Repository card (GitHub social preview image) -->
       <div class="position-relative">
-        <img class="repo-img-light w-100" alt="{{ repo_path }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}">
-        <img class="repo-img-dark w-100" alt="{{ repo_path }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}">
-      </div>
-      
-      <!-- Repository icon overlay - right aligned -->
-      {% if repo_data.icon %}
-      <div style="position: absolute; top: -70px; right: 7px; bottom: 0; display: flex; align-items: center;">
-        <img src="https://raw.githubusercontent.com/{{ repo_path }}/master/{{ repo_data.icon }}" 
-             alt="Repository icon" 
-             style="max-height: 80%; max-width: 40px;" 
-             onerror="this.style.display='none'">
-      </div>
-      {% endif %}
+        <img class="w-100" alt="{{ repo_path }}" src="https://opengraph.githubassets.com/1/{{ repo_path }}">
 
+        <!-- Repository icon overlay - top-right corner of card -->
+        {% if repo_data.icon %}
+        <img src="https://raw.githubusercontent.com/{{ repo_path }}/master/{{ repo_data.icon }}"
+             alt="Repository icon"
+             style="position: absolute; top: 8px; right: 8px; max-height: 48px; max-width: 48px;"
+             onerror="this.style.display='none'">
+        {% endif %}
+      </div>
     </a>
 
     <!-- Download badge - below the card -->
