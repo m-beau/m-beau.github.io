@@ -501,11 +501,11 @@ footer.sticky-bottom {
   }
 }
 
-// Desktop: 4 cards per row
+// Desktop: 2 cards per row
 @media (min-width: 992px) {
   .repo {
-    max-width: 25%;
-    flex: 0 0 25%;
+    max-width: 50%;
+    flex: 0 0 50%;
   }
 }
 
