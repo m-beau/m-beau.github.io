@@ -516,6 +516,9 @@ footer.sticky-bottom {
   overflow: hidden;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   height: 100%;
+  // .repo is a flex container from 768px up, so the card would otherwise
+  // shrink to its content width when the description is short.
+  width: 100%;
 
   &:hover {
     border-color: var(--global-theme-color);
