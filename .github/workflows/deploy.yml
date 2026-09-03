@@ -9,6 +9,11 @@ on:
     branches:
       - master
       - main
+  # GitHub repo stats (stars/forks/contributors) are baked into the HTML at
+  # build time by _plugins/fetch_github_stats.rb, so the site has to be
+  # rebuilt for them to refresh. Rebuild daily.
+  schedule:
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 permissions:

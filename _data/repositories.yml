@@ -17,3 +17,9 @@ github_repos:
   - repo: m-beau/pixelmap
     branch: dev
     icon: pixelmap/gui/assets/npix_map_logo.png
+  - repo: m-beau/mplify
+    branch: main
+    badge:
+      img: https://static.pepy.tech/badge/mplify
+      url: https://pepy.tech/project/mplify
+      alt: Downloads
