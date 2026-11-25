@@ -2,6 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
+heading: Selected publications
 bibliography: papers.bib
 
 description:

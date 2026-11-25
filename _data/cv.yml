@@ -1,14 +1,20 @@
+# Keep in sync with assets/pdf/Maxime_Beau_CV_<latest>.pdf (currently 2026_11)
+
 - title: Maxime Beau, Ph.D.
   type: map
   contents:
     - name: Field
       value: Systems and Computational Neuroscience
     - name: Email
-      value: maxime@princeton.edu
+      value: <a href="mailto:maxime@princeton.edu">maxime@princeton.edu</a>
     - name: Github
       value: <a href="https://www.github.com/m-beau">m-beau</a>
     - name: Scholar
       value: <a href="https://scholar.google.com/citations?user=dwvkuEAAAAAJ&hl=en">dwvkuEAAAAAJ</a>
+
+- title: Summary
+  contents: |
+    <p class="font-weight-light">Postdoctoral researcher (HHMI, <a href="https://brodylab.org">Brody lab</a>, Princeton Neuroscience Institute) studying how brain-wide circuits and catecholaminergic neuromodulation implement attention control during context-dependent decision-making. I combine chronic recordings from up to 8 simultaneous Neuropixels probes in freely moving rats with optogenetics, pharmacology, and dynamical-systems models of multi-area population activity. During my PhD (UCL, Häusser lab), I co-discovered reward-predictive climbing fiber signals in the cerebellum (<a href="https://doi.org/10.1038/s41593-019-0381-8">Kostadinov et al., Nature Neuroscience, 2019</a>) and, as first author in an international collaboration, developed a semi-supervised deep-learning method that identifies neuron cell types across species (<a href="https://doi.org/10.1016/j.cell.2025.01.041">Beau et al., Cell, 2025</a>). I also develop open-source Neuropixels software (<a href="https://github.com/m-beau/NeuroPyxels">NeuroPyxels</a>, <a href="https://github.com/m-beau/pixelmap">PixelMap</a>; >200 GitHub stars combined) and co-founded the Princeton Neuroscience Institute Open Science award.</p>
 
 - title: Education
   type: time_table
@@ -17,304 +23,349 @@
       institution: <a href="http://www.dendrites.org">Neural Computation Laboratory</a><br>University College London
       location: London, UK
       year: 2018 - 2025
-      maindescription:
-      - "Mentors: Michael Häusser, Beverley Clark, "
-      - <a href="https://www.dkneurolab.com/team">Dimitar Kostadinov</a>
-      - "."
+      maindescription: |
+        Mentors: Michael Häusser, Beverley Clark, <a href="https://www.dkneurolab.com/team">Dimitar Kostadinov</a>
 
     - title: MSc, Neuroscience
       institution: Université Pierre et Marie Curie
       location: Paris, France
       year: 2016 - 2017
-      maindescription:
-      - <a href="http://master.bip.sorbonne-universite.fr/en/teatchings/neurosciences.html">Master Recherche de Sciences, Technologie, Santé - Biologie Intégrative et Physiologie (BIP)</a>
+      maindescription: |
+        <a href="http://master.bip.sorbonne-universite.fr/en/teatchings/neurosciences.html">Master Recherche de Sciences, Technologie, Santé - Biologie Intégrative et Physiologie (BIP)</a>
 
     - title: MD-PhD Programme
       institution: Université Paris Descartes
       location: Paris, France
       year: 2014 - 2016
-      maindescription:
-      - <a href="https://www.inserm.fr/nous-connaitre/ecole-de-linserm-liliane-bettencourt">Programme Médecine-Science</a>
+      maindescription: |
+        <a href="https://www.inserm.fr/nous-connaitre/ecole-de-linserm-liliane-bettencourt/">Programme Médecine-Science</a>
 
     - title: Medical School Bachelor
       institution: Université Paris Descartes
       location: Paris, France
-      year: 2013 - 2014
-      maindescription:
-      - <a href="https://u-paris.fr/medecine/medecine/">Diplôme de Formation Générale en Sciences Médicales</a>
+      year: 2013 - 2016
+      maindescription: |
+        <a href="https://u-paris.fr/medecine/medecine/">Diplôme de Formation Générale en Sciences Médicales</a>
 
-- title: Experience
+- title: Research Positions
   type: time_table
   contents:
-
-    - title: Postdoctoral researcher, Neuroscience
+    - title: HHMI Postdoctoral researcher, Neuroscience
       institution: <a href="https://brodylab.org">Brody lab</a><br><a href="https://pni.princeton.edu/people/maxime-beau">Princeton Neuroscience Institute</a><br>Princeton University
-      location: Princeton, NJ
+      location: Princeton, NJ, USA
       year: 2025 - present
-      maindescription:
+      maindescription: |
+        Mentor: Carlos Brody
+      description:
+        - title: <strong>Projects</strong>
+          contents:
+            - Brain-wide circuit and neuromodulatory mechanisms of attention control during context-dependent decision-making in freely moving rats.
+            - Refinement of the 8-probe chronic implant (<a href="https://www.biorxiv.org/content/10.1101/2024.08.21.609044v7">Bondy et al., 2026</a>) and wiring-aware channelmap design (<a href="https://doi.org/10.21105/joss.11008">PixelMap</a>).
+        - title: <strong>Collaborations</strong>
+          contents:
+            - Stimulant pharmacology in context-dependent decision-making - <i>Witten lab, Princeton Neuroscience Institute</i>
 
     - title: Graduate researcher, Neuroscience
-      institution: <a href="http://www.dendrites.org">Neural Computation lab</a><br><a href="https://www.ucl.ac.uk/medical-sciences/divisions/wolfson-institute-biomedical-research">Wolfson Institute for Biomedical Research</a><br>University College London
+      institution: <a href="http://www.dendrites.org">Neural Computation Laboratory</a><br>University College London
       location: London, UK
       year: 2018 - 2025
       description:
         - title: <strong>Projects</strong>
           contents:
-            - Study of long-range information transmission along the cerebellar output pathway in behaving mice
-            - <a href="https://www.nature.com/articles/s41593-019-0381-8">Co-discovery of reward-predictive signals in the cerebellum</a>
+            - Study of long-range information transmission along the cerebellar output pathway in behaving mice.
+            - <a href="https://www.nature.com/articles/s41593-019-0381-8">Co-discovery of reward-predictive signals in the cerebellum.</a>
         - title: <strong>Collaborations</strong>
           contents:
-            - Lead author of the <a href="https://www.biorxiv.org/content/10.1101/2024.01.30.577845v1">Cerebellum Cell-types Classification Collaboration (C4)</a> - <i>Duke University, Baylor College of Medicine, University College London</i>
+            - Co-first author and lead contributor of the <a href="https://www.cell.com/cell/abstract/S0092-8674(25)00110-2">Cerebellum Cell-types Classification Collaboration (C4)</a> - <i>Duke University, Baylor College of Medicine, University College London</i>
             - <a href="https://www.science.org/doi/10.1126/science.abf4588">Testing and deployment of Neuropixels silicon probes</a> - <i>Neuropixels consortium</i>
             - <a href="https://www.biorxiv.org/content/10.1101/2021.03.10.434756v2">Comparison of gated linear networks and cerebellar microcircuit architectures</a> - <i>DeepMind</i>
 
     - title: Trainee, Methods in Computational Neuroscience
-      institution: <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/methods-computational-neuroscience">Marine Biology Laboratory</a>
-      location: Woods Hole, MA
-      year: Summer 2014
-      maindescription: Geometrical and dynamical characterisation of RNN activity states during context-dependant perceptual decision-making. Mentored by Dr. Roozbeh Kiani and Dr. Srdjan Ostojic.
+      institution: <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/methods-computational-neuroscience">Marine Biological Laboratory</a>
+      location: Woods Hole, MA, USA
+      year: Summer 2024
+      maindescription: Geometrical and dynamical characterisation of RNN activity states during context-dependent perceptual decision-making. Mentored by Dr. Roozbeh Kiani and Dr. Srdjan Ostojic.
 
     - title: MSc intern, Biophysical Modelling
-      institution: <a href="https://www.ibens.bio.ens.psl.eu/?rubrique32&lang=en">Boris Barbour group</a><br>École Normale Supérieure
+      institution: <a href="https://www.ibens.ens.fr/spip.php?rubrique32&lang=en">Boris Barbour group</a><br>École Normale Supérieure
       location: Paris, France
       year: 2016 - 2017
       maindescription: Computational exploration of the electrogenic properties of the axon initial segment in models of pyramidal and Purkinje cells.
 
     - title: Research summer intern, Neural Network Modelling
-      institution: <a href="http://www.dendrites.org">Neural Computation lab</a><br><a href="https://www.ucl.ac.uk/medical-sciences/divisions/wolfson-institute-biomedical-research">Wolfson Institute for Biomedical Research</a><br>University College London
+      institution: <a href="http://www.dendrites.org">Neural Computation Laboratory</a><br>University College London
       location: London, UK
       year: Summer 2016
-      maindescription:
+      maindescription: Study of the effect of the topology of artificial networks of cerebellar interneurons on network dynamics.
 
     - title: Research summer intern, Neuroendocrinology
-      institution: <a href="https://www.institut-necker-enfants-malades.fr/index.php?menu=team&rubric=teamtabs&idfac=oury">Franck Oury group</a><br>NEM, INSERM U1151
+      institution: <a href="https://www.institut-necker-enfants-malades.fr/index.php?menu=team&rubric=teamtabs&idfac=oury">Franck Oury group</a><br>INEM, INSERM U1151
       location: Paris, France
       year: Summer 2015
-      maindescription: Investigation of the involvement of the phosphate carrier protein Pit-1 in the function of the parathyroid hormone (PTH) in the hippocampus.
 
     - title: Clinical summer intern, Neurosurgery
       institution: <a href="https://hopital-necker.aphp.fr/neurochirurgie">Neurosurgery department, Necker hospital</a>
       location: Paris, France
       year: Summer 2014
-      maindescription:
-
-- title: Technical Expertise
-  type: nested_list
-  contents:
-    - title: Systems Neuroscience
-      items: 
-        - In vivo high-density electrophysiology (first Neuropixels recording in the cerebellum)
-        - Optogenetics, rodent behaviour (surgery, training, analysis)
-        - Analog and digital electronics, signal synchronization, Arduino programming
-        - Confocal microscopy, volumetric image processing
-        - Perfusions, histology, PCR, bacterial cloning
-    - title: Computational Neuroscience
-      items:
-        - Machine Learning - clustering, semi-supervised learning, deep generative models (<a href="https://www.cell.com/cell/abstract/S0092-8674(25)00110-2B">Beau et al., Cell, 2025</a>)
-        - Neural data analysis - spike-sorting, spectral analysis, general linear models, dynamical systems
-        - Python open-source software development (<a href="https://github.com/m-beau/NeuroPyxels">NeuroPyxels</a>)
-        - Biophysical modelling - <a href="https://doi.org/10.1101/2022.03.07.483302">NEURON</a> (<a href="https://academic.oup.com/braincomms/article/4/6/fcac284/6801087">Senol et al., 2022</a>) and BRIAN simulation environments
-
 
 - title: Selected Publications
   type: time_table
   contents:
+    - year: 2026
+      maindescription: |
+        <b>Beau, M.</b>, Fabre, J., Tabedzki, C., Yanar, J. and Brody, C.<br>
+        <a href="https://doi.org/10.21105/joss.11008">PixelMap: A browser-based tool for wiring-aware, anatomy- and activity-guided design of Neuropixels channelmaps.</a><br>
+        <i>Journal of Open Source Software</i>
+
+    - year: 2026
+      maindescription: |
+        Bondy, A.G., Charlton, J.A., Luo, T.Z., ..., <b>Beau, M.</b>, ..., and Brody, C.<br>
+        <a href="https://www.biorxiv.org/content/10.1101/2024.08.21.609044v7">Multi-region coordination of evidence accumulation and decision commitment in the brain.</a><br>
+        <i>bioRxiv</i>
+
     - year: 2025
       maindescription: |
-        <b>Beau, M.*</b>, Herzfeld, D.*, ..., Häusser, M.† and Medina, J.†.<br>
+        Carolan, J., Land, M.A., Lu, X., <b>Beau, M.</b>, ..., and Häusser, M.<br>
+        <a href="https://www.nature.com/articles/s41467-025-63867-4">All-optical voltage interrogation for probing synaptic plasticity in vivo.</a><br>
+        <i>Nature Communications</i>
+
+    - year: 2025
+      maindescription: |
+        <b>Beau, M.*</b>, Herzfeld, D.J.*, ..., Häusser, M.† and Medina, J.F.†<br>
         <a href="https://www.cell.com/cell/abstract/S0092-8674(25)00110-2">A deep learning strategy to identify cell types across species from high-density extracellular recordings.</a><br>
         <i>Cell</i>
-    
+
     - year: 2022
       maindescription: |
         Senol, A.D., Pinto, G., <b>Beau, M.</b>, ... and Davenne, M.<br>
         <a href="https://academic.oup.com/braincomms/article/4/6/fcac284/6801087">Alterations of the axon initial segment in multiple sclerosis grey matter.</a><br>
         <i>Brain Communications</i>
-        
+
     - year: 2021
       maindescription: |
-        Sezener, E.*, Grabska-Barwinska, A.*, Kostadinov, D.*, <b>Beau, M.</b>, ... and Latham, P. <i>UCL, DeepMind</i> <br>
-        <a href="https://doi.org/10.1101/2021.03.10.434756">A rapid and efficient learning rule for biological neural circuits.</a><br>
+        Sezener, E.*, Grabska-Barwinska, A.*, Kostadinov, D.*, <b>Beau, M.</b>, ... and Latham, P.<br>
+        <a href="https://doi.org/10.1101/2021.03.10.434756">A rapid and efficient learning rule for biological neural circuits.</a> <i>UCL, DeepMind.</i><br>
         <i>bioRxiv</i>
-    
+
     - year: 2021
       maindescription: |
         Steinmetz, N. A.*, Aydin, C.*, Lebedeva, A.*, Okun, M.*, Pachitariu, M.*, Bauza, M., <b>Beau, M.</b> ... and Harris, T.<br>
         <a href="https://doi.org/10.1126/science.abf4588">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings.</a><br>
         <i>Science</i>
-    
+
     - year: 2020
       maindescription: |
-        Tsutsumi, S., Chadney, O. ... Bäumler, E., Faraggiana, L., <b>Beau, M.</b> and Häusser, M.<br>
-        <a href="https://doi.org/10.1016/j.celrep.2020.108537">Purkinje Cell Activity Determines the Timing of Sensory-Evoked Motor Initiation.</a><br>
+        Tsutsumi, S., ..., <b>Beau, M.</b> and Häusser, M.<br>
+        <a href="https://doi.org/10.1016/j.celrep.2020.108537">Purkinje cell activity determines the timing of sensory-evoked motor initiation.</a><br>
         <i>Cell Reports</i>
-    
+
     - year: 2019
       maindescription: |
-        Kostadinov, D., <b>Beau, M.</b>, Pozo, M. and Häusser, M.<br>
+        Kostadinov, D., <b>Beau, M.</b>, Blanco-Pozo, M. and Häusser, M.<br>
         <a href="https://doi.org/10.1038/s41593-019-0381-8">Predictive and reactive reward signals conveyed by climbing fiber inputs to cerebellar Purkinje cells.</a><br>
         <i>Nature Neuroscience</i>
-
-
-- title: Invited Talks
-  type: time_table
-  contents:
-    - year: Mar 2025
-      location: online
-      maindescription: |
-        John Hopkins Cerebellum Seminars <a href="https://www.youtube.com/watch?v=zy0vBngeTJQ"><i class="fab fa-youtube" style="color:red"></i></a>
-    - year: Jun 2024
-      location: London, UK
-      maindescription: |
-        Jon Driver Prize Winner <a href="https://mediacentral.ucl.ac.uk/Play/112817"><i class="fab fa-youtube" style="color:red"></i></a>
-    - year: Jan 2024
-      location: Montpellier, France
-      maindescription: |
-        French cerebellum day, Institute for Neurosciences of Montpellier
-    - year: Oct 2023
-      location: London, UK
-      maindescription: |
-        University College London Open Science Award ceremony
-    - year: Aug 2023
-      location: Lewiston, ME
-      maindescription: |
-        <a href="https://www.grc.org/cerebellum-conference/2023/">Cerebellum Gordon Research Conference (GRC)</a>, Bates College
-    - year: Jan 2023
-      location: Paris, France
-      maindescription: |
-        French cerebellum day, Institut du Cerveau et de la Moëlle Épinière
-    - year: 2018-2022
-      location: online
-      maindescription: |
-        <a href="https://www.ucl.ac.uk/neuropixels/training/2021-neuropixels-course">UCL Neuropixels Course</a> <a href="https://www.youtube.com/watch?v=hjuufbEm42g"><i class="fab fa-youtube" style="color:red"></i></a>
-    - year: Jan 2022
-      location: online
-      maindescription: |
-        Shadmehr lab, Johns Hopkins University
-    - year: Jan 2020
-      location: Bern, Switzerland
-      maindescription: |
-        Systems neuroscience department, Universtät Bern
-
-- title: Selected Conference Presentations
-  type: time_table
-  contents:
-    - year: 2023
-      institution: Cerebellum Gordon Research Conference
-      location: ME, USA
-      maindescription: |
-        <b>Beau, M.</b>, Stabb, H., ... and Häusser, M.<br>
-        What Purkinje cells tell the nuclei: insights from monosynaptic paired recordings in behaving mice.
-    - year: 2022
-      institution: Society for Neurocience
-      location: CA, USA
-      maindescription: |
-        <b>Beau, M.*</b>, Herzfeld, D.J.*, ... Medina, J†. and Häusser, M.†<br>
-        The C4 initiative: Cross-species cell type classification of high-density recordings in the cerebellar cortex.
-    - year: 2021
-      institution: Society for Neuroscience
-      location: online
-      maindescription: |
-        <b>Beau, M.</b>, Váradi, M., Ratto, R., Kostadinov, D., Cohen, D. and Häusser, M.<br>
-        Signal transformations along the cerebellar output pathway in behaving mice.
-    - year: 2019
-      institution: Cerebellum Gordon Research Conference
-      location: Switzerland
-      maindescription: |
-        <b>Beau, M.</b>, Kostadinov, D. and Häusser, M.<br>
-        Functional interactions between cerebellar cortex and nuclei in behaving mice.
-    - year: 2018
-      institution: Society for Neuroscience
-      location: CA, USA
-      maindescription: |
-        <b>Beau, M.</b>, Kostadinov, D., Blanco Pozo, M. and Häusser, M.<br>
-        Probing the functional interactions between distinct elements of the cerebellar cortex and deep nuclei circuitry in awake behaving mice.
 
 - title: Awards and Honors
   type: time_table
   contents:
     - year: 2024
-      title: William Morton Wheeler Family Founder's Scholarship
-      institution: Marine Biology Laboratory
+      title: Jon Driver Prize, Winner
+      institution: University College London
       maindescription: |
-        Awarded to attend <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/methods-computational-neuroscience">Woods Hole's summer school: methods in computational neuroscience</a>. $3,000.
+        <a href="https://en.wikipedia.org/wiki/Jon_Driver#Jon_Driver_Prize">Competitive annual prize</a> awarded to outstanding early career neuroscientists from UCL.
     - year: 2024
-      title: Jon Driver Prize
-      institution: University College London
+      title: William Morton Wheeler Family Founder's Scholarship, Awardee
+      institution: Marine Biological Laboratory
       maindescription: |
-        <a href="https://en.wikipedia.org/wiki/Jon_Driver#Jon_Driver_Prize">Competitive annual Prize</a> awarded to outstanding early career neuroscientists from UCL.
+        Awarded to attend <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/methods-computational-neuroscience">Woods Hole's summer school: Methods in Computational Neuroscience</a>. $3,000.
     - year: 2023
-      title: UCL Open Science Award
+      title: UCL Open Science Award, Honourable mention
       institution: University College London
       maindescription: |
-        Honourable mention for <a href="https://github.com/m-beau/NeuroPyxels">NeuroPyxels: open-source python package for loading, processing and plotting of Neuropixels data</a>.
+        For <a href="https://github.com/m-beau/NeuroPyxels">NeuroPyxels: open-source Python package for loading, processing and plotting of Neuropixels data</a>.
     - year: 2015
-      title: Médecine-Science Fellowship
+      title: Médecine-Science, Fellow
       institution: Université Paris Descartes
       maindescription: |
         MD-PhD programme. €50,400 scholarship, declined. One of 19 laureates.
     - year: 2014
-      title: Competitive Admission in Medical School
+      title: Medical School Entry Contest, Awardee
       institution: Université Paris Descartes
       maindescription: |
         Ranked <a href="https://www.hollywoodreporter.com/movies/movie-reviews/freshmen-premiere-annee-review-1152281/">27th out of 1914 candidates</a>.
 
+- title: Invited Talks
+  type: time_table
+  contents:
+    - year: Oct 2026
+      location: Hong Kong
+      maindescription: |
+        University of Hong Kong, <a href="https://hausserlab.squarespace.com/speakers">Croucher workshop: Large-scale Recordings of Neural Activity</a>
+    - year: Mar 2026
+      maindescription: |
+        <a href="https://celltypestospikesworkshop.github.io/2026/">Cosyne 2026 workshop: from spikes to cell types</a>. Invited speaker.
+    - year: Jun 2025
+      maindescription: |
+        Baylor College of Medicine Data Science Community seminar series
+    - year: Mar 2025
+      location: online
+      maindescription: |
+        Johns Hopkins Cerebellum Seminars <a href="https://www.youtube.com/watch?v=zy0vBngeTJQ"><i class="fab fa-youtube" style="color:red"></i></a>
+    - year: Jun 2024
+      location: London, UK
+      maindescription: |
+        Jon Driver Prize lecture, University College London <a href="https://mediacentral.ucl.ac.uk/Play/112817"><i class="fab fa-youtube" style="color:red"></i></a>
+    - year: Jan 2024
+      location: Montpellier, France
+      maindescription: |
+        French cerebellum day, Institute for Neurosciences of Montpellier
+    - year: Aug 2023
+      location: ME, USA
+      maindescription: |
+        <a href="https://www.grc.org/cerebellum-conference/2023/">Cerebellum Gordon Research Conference (GRC)</a>, Bates College
+    - year: Jan 2023
+      location: Paris, France
+      maindescription: |
+        French cerebellum day, Institut du Cerveau et de la Moelle Épinière
+    - year: Jan 2022
+      location: MD, USA
+      maindescription: |
+        Shadmehr lab, Johns Hopkins University
+    - year: Jan 2020
+      location: Bern, Switzerland
+      maindescription: |
+        Systems neuroscience department, Universität Bern
+
+- title: Selected Conference Presentations
+  type: time_table
+  contents:
+    - year: 2023
+      location: ME, USA
+      maindescription: |
+        <b>Beau, M.</b>, Stabb, H., ... and Häusser, M.<br>
+        What Purkinje cells tell the nuclei: insights from monosynaptic paired recordings in behaving mice.<br>
+        <i>Cerebellum Gordon Research Conference</i>
+    - year: 2022
+      location: CA, USA
+      maindescription: |
+        <b>Beau, M.*</b>, Herzfeld, D.J.*, ... Medina, J.F.† and Häusser, M.†<br>
+        The C4 initiative: Cross-species cell type classification of high-density recordings in the cerebellar cortex.<br>
+        <i>Society for Neuroscience</i>
+    - year: 2019
+      location: Switzerland
+      maindescription: |
+        <b>Beau, M.</b>, Kostadinov, D. and Häusser, M.<br>
+        Functional interactions between cerebellar cortex and nuclei in behaving mice.<br>
+        <i>Cerebellum Gordon Research Conference</i>
+    - year: 2018
+      location: CA, USA
+      maindescription: |
+        <b>Beau, M.</b>, Kostadinov, D., Blanco Pozo, M. and Häusser, M.<br>
+        Probing the functional interactions between distinct elements of the cerebellar cortex and deep nuclei circuitry in awake behaving mice.<br>
+        <i>Society for Neuroscience</i>
+
+- title: Open Source Software
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/m-beau/NeuroPyxels"><i class="fab fa-github"></i> NeuroPyxels</a> <img src="https://img.shields.io/github/stars/m-beau/NeuroPyxels?style=social" alt="GitHub stars">
+      maindescription: |
+        Python library for electrophysiologists using Neuropixels probes: core utilities for loading, processing and plotting Neuropixels data.
+    - title: <a href="https://github.com/m-beau/pixelmap"><i class="fab fa-github"></i> PixelMap</a> <img src="https://img.shields.io/github/stars/m-beau/pixelmap?style=social" alt="GitHub stars">
+      maindescription: |
+        Browser-based app for designing anatomy- and activity-guided Neuropixels channelmaps that respect hardware wiring constraints (<a href="https://doi.org/10.21105/joss.11008">JOSS, 2026</a>). Hosted at Princeton: <a href="https://pixelmap.pni.princeton.edu">pixelmap.pni.princeton.edu</a>.
+    - title: <a href="https://github.com/m-beau/cachecache"><i class="fab fa-github"></i> CacheCache</a> <img src="https://img.shields.io/github/stars/m-beau/cachecache?style=social" alt="GitHub stars">
+      maindescription: |
+        Python library for decorating functions with flexible, runtime-configurable caching.
+    - title: <a href="https://github.com/m-beau/mplify"><i class="fab fa-github"></i> Mplify</a> <img src="https://img.shields.io/github/stars/m-beau/mplify?style=social" alt="GitHub stars">
+      maindescription: |
+        Python library for intuitive, one-liner Matplotlib figure prettification.
+    - title: Contributions
+      maindescription: |
+        Contributor to <a href="https://github.com/MouseLand/Kilosort">Kilosort</a> (spike sorting) and <a href="https://github.com/Julie-Fabre/bombcell">Bombcell</a> (automated quality control of spike-sorted units).
+
 - title: Teaching and Mentoring
   type: time_table
   contents:
-    - year: 2019-2025
-      maindescription: Teaching assistant, PhDs and postdocs
+    - title: <i>Teaching</i>
+    - year: 2026
       title: |
-        <a href="https://parisneuro.ovh/">Paris spring school of Imaging and Electrophysiology</a><br>
+        <a href="https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/methods-computational-neuroscience">Woods Hole Methods in Computational Neuroscience</a>
+      maindescription: Teaching assistant, PhDs and postdocs
+    - year: 2019 - present
+      title: |
+        <a href="https://parisneuro.ovh/">Paris spring school of Imaging and Electrophysiology</a>
+      maindescription: Teaching assistant, PhDs and postdocs
+    - year: 2018 - present
+      title: |
+        <a href="https://www.ucl.ac.uk/neuropixels/training/2021-neuropixels-course">UCL Neuropixels Course</a>, every year <a href="https://www.youtube.com/watch?v=hjuufbEm42g"><i class="fab fa-youtube" style="color:red"></i></a>
+      maindescription: Lecturer, PhDs and postdocs
     - year: 2019, 2022
+      title: |
+        <a href="http://cajal-training.org/on-site/inc2022/">Lisbon Cajal training course: Interacting with neural circuits</a>
       maindescription: Teaching assistant, PhDs and postdocs
-      title: |
-        <a href="http://cajal-training.org/on-site/inc2022/">Lisbon Cajal training course: Interacting with neural circuits</a><br>  
     - year: 2018, 2019
-      maindescription: Teaching assistant, undergraduates<br>
       title: |
-        UCL Neuroscience BSc: NEURON modelling practicals<br>
-    - 
-    - year: 2021-2023
-      maindescription: Supervisor
-      title: |
-        Hannah Stabb, UCL neuroscience integrated MSci
-    - year: 2021-2022
-      maindescription: Supervisor
-      title: |
-        Federico d'Agostino, UCL machine learning MSc
-    - year: 2020-2021
-      maindescription: Supervisor
-      title: |
-        Ago Lajko, UCL machine learning MSc
-    - year: 2019-2020
-      maindescription: Co-supervisor
-      title: |
-        Michael Maibach, UCL neuroscience MSc
+        UCL Neuroscience BSc: NEURON modelling practicals
+      maindescription: Teaching assistant, undergraduates
+    - title: <i>Mentees</i>
+    - year: 2026 - present
+      title: Jeremy Schroeter
+      maindescription: Princeton Neuroscience Institute PhD student
+    - year: 2021 - 2023
+      title: Hannah Stabb
+      maindescription: UCL neuroscience integrated MSci
+    - year: 2021 - 2022
+      title: Federico d'Agostino
+      maindescription: UCL machine learning MSc
+    - year: 2020 - 2021
+      title: Ago Lajko
+      maindescription: UCL machine learning MSc
+    - year: 2019 - 2020
+      title: Michael Maibach
+      maindescription: UCL neuroscience MSc
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/m-beau/NeuroPyxels"><i class="fab fa-github"></i> NeuroPyxels</a>
-      maindescription: |
-        NeuroPyxels (npyx) is a Python library built for electrophysiologists using Neuropixels electrodes. It features a suite of core utility functions for loading, processing and plotting Neuropixels data.
-    - title: <a href="https://github.com/m-beau/cachecache"><i class="fab fa-github"></i> CacheCache</a>
-      maindescription: |
-        CacheCache is a Python library for decorating functions with flexible, runtime-configurable caching.
-
-- title: Volunteering and General Skills
+- title: Technical Expertise
   type: nested_list
   contents:
-    - title: Society executive positions
+    - title: Systems neuroscience
       items:
-        - Co-founder of UPSyNe, UCL PhDs in Systems Neuroscience association (2019-2020)
-        - Executive board member of <a href="http://www.eumdphd.com">EMPA, the European MD-PhD association</a> (2019-2022)
-        - General Vice President of <a href="http://www.amps-asso.fr">AMPS, the French MD-PhD association</a> (2017-2018)
-    - title: Programming
+        - "In vivo high-density electrophysiology: chronic eight-probe Neuropixels implants in freely-moving rats, acute recordings in behaving mice, Neuropixels 1.0 and 2.0 testing (Neuropixels consortium)"
+        - Optogenetics, pharmacology, rodent behaviour (surgery, training, analysis)
+        - Electronics and signal synchronization for electrophysiology and behaviour, hardware and software
+        - Confocal microscopy, 3D histological registration
+    - title: Computational methods
       items:
-        - "Python: 9 y. experience, see <a href=\"https://github.com/m-beau/NeuroPyxels\">NeuroPyxels</a> and <a href=\"https://github.com/m-beau/cachecache\">CacheCache</a>"
-        - "MATLAB: 6 y. experience"
-        - "Git: 9 y. experience in multi-collaborators codebase management"
-    - title: Extracurricular activities
-      items:
-        - "Karate-Do:<br>&nbsp;&nbsp;&nbsp;&nbsp;Shotokan ryu<br>&nbsp;&nbsp;&nbsp;&nbsp;2023-2025 Kentish Town Karate club instructor<br>&nbsp;&nbsp;&nbsp;&nbsp;Black belt 2nd Dan (<a href=\"https://www.ffkarate.fr/espace-licencies/passer-un-grade/\">CSDGE</a>)"
+        - "Machine learning: clustering, semi-supervised learning, deep generative models (<a href=\"https://www.cell.com/cell/abstract/S0092-8674(25)00110-2\">Beau et al., 2025</a>)"
+        - "Neural data analysis: spike sorting, spectral analysis, generalized linear models, dynamical systems"
+        - Recurrent neural networks, dynamical systems
+        - "Biophysical modelling: <a href=\"https://doi.org/10.1101/2022.03.07.483302\">NEURON</a> and BRIAN simulation environments"
+        - "Programming: Python (open-source package development), MATLAB, Git"
+
+- title: Service and Activities
+  type: time_table
+  contents:
+    - title: <i>Society executive positions</i>
+    - year: 2026
+      maindescription: Co-founder of the Princeton Neuroscience Institute Open Science Award
+    - year: 2019 - 2020
+      maindescription: Co-founder of UPSyNe, UCL PhDs in Systems Neuroscience association
+    - year: 2019 - 2022
+      maindescription: Executive board member of <a href="http://www.eumdphd.com">EMPA, the European MD-PhD association</a>
+    - year: 2017 - 2018
+      maindescription: General Vice President of <a href="http://www.amps-asso.fr">AMPS, the French MD-PhD association</a>
+    - title: <i>Editorial and reviewing</i>
+    - year: 2025 - present
+      maindescription: Recommender, Peer Community In Neuroscience (PCI Neuro); <a href="https://neuro.peercommunityin.org/articles/rec?id=228">recommendation, 2026</a>
+    - year: 2026
+      maindescription: Reviewer, Cosyne
+    - title: <i>Shotokan Karate Instructor</i>
+    - year: 2025 - present
+      location: Princeton, NJ
+      maindescription: Northern Karate Schools Princeton (<a href="https://northernkarateprinceton.com/">northernkarateprinceton.com</a>) - Sensei
+    - year: 2023 - 2025
+      location: London, UK
+      maindescription: Kentish Town Karate Club - Sempai
+    - year: 2015
+      maindescription: Black Belt 2nd Dan (<a href="https://www.ffkarate.fr/espace-licencies/passer-un-grade/">FFK</a>)
+    - year: 2013
+      maindescription: Black Belt 1st Dan (<a href="https://www.ffkarate.fr/espace-licencies/passer-un-grade/">FFK</a>)
