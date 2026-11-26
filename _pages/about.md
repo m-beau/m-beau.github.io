@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: Maxime_Beau.png
+  image: Maxime_Beau_2026.jpg
   image_circular: false # crops the image to make it circular
   max-width: 30px
   more_info: >
